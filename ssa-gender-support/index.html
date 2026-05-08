@@ -5,110 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SSA-Gender Support and Resources</title>
   <style>
-    :root {
-      --ink: #173438;
-      --accent: #285459;
-      --paper: #f7f4ee;
-      --card: #ffffff;
-      --line: #d8d0c4;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(40, 84, 89, 0.12), transparent 32%),
-        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
-      min-height: 100vh;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 56px 20px 80px;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.05;
-    }
-
-    p {
-      font-size: 1.08rem;
-      line-height: 1.7;
-      max-width: 720px;
-    }
-
-    .panel {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 24px;
-      margin-top: 28px;
-      box-shadow: 0 16px 40px rgba(23, 52, 56, 0.08);
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .button.secondary {
-      background: transparent;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-    }
-
-    .resource {
-      margin-top: 18px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-    }
-
-    .resource h2 {
-      margin: 0 0 8px;
-      font-size: 1.2rem;
-    }
+    :root { --ink:#173438; --accent:#285459; --paper:#f7f4ee; --card:#fff; --line:#d9d1c5; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at top left, rgba(40,84,89,.12), transparent 32%), linear-gradient(180deg,#fbfaf7 0%,var(--paper) 100%); font-family:Georgia,"Times New Roman",serif; }
+    a { color:var(--accent); }
+    img { max-width:100%; height:auto; display:block; }
+    .site-shell { max-width:1180px; margin:0 auto; padding:24px 18px 80px; }
+    .topbar { display:flex; justify-content:space-between; gap:16px; align-items:center; margin-bottom:24px; padding:16px 20px; background:rgba(255,255,255,.8); border:1px solid var(--line); border-radius:18px; backdrop-filter:blur(10px); }
+    .brand { font-size:.95rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+    .nav { display:flex; flex-wrap:wrap; gap:10px; }
+    .nav a { text-decoration:none; padding:10px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; }
+    .hero { background:#fff; border:1px solid var(--line); border-radius:24px; padding:28px 24px; box-shadow:0 18px 42px rgba(23,52,56,.08); margin-bottom:26px; }
+    .hero h1 { margin:0; font-size:clamp(2rem,4vw,3rem); line-height:1.06; }
+    .content-card { background:rgba(255,255,255,.96); border:1px solid var(--line); border-radius:24px; padding:20px; box-shadow:0 18px 42px rgba(23,52,56,.06); }
+    .grid { display:grid; grid-template-columns:minmax(280px,360px) 1fr; gap:28px; }
+    @media (max-width:900px){ .grid { grid-template-columns:1fr; } }
+    .media img { width:100%; border-radius:14px; margin-bottom:12px; }
+    .media h3 { margin:10px 0 18px; font-size:1rem; text-align:center; }
+    .section { margin-bottom:24px; }
+    .section h2 { margin:0 0 10px; font-size:1.4rem; }
+    .section h3 { margin:18px 0 8px; font-size:1.1rem; }
+    .section p, .section li { line-height:1.7; }
+    ul { padding-left:22px; }
+    .pill { display:inline-block; padding:10px 14px; border-radius:999px; border:1px solid var(--accent); text-decoration:none; font-weight:700; margin-right:10px; margin-top:8px; }
+    .muted { opacity:.9; }
+    .notice { margin-bottom:14px; font-size:1rem; }
   </style>
 </head>
 <body>
-  <main>
-    <h1>SSA-Gender Support and Resources</h1>
-    <p>This page gathers support and services resources related to same-sex attraction and gender identity discordance.</p>
+  <div class="site-shell">
+    <div class="topbar">
+      <div class="brand">LI SSA Resources</div>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../ssa-gender-education/index.html">Education</a>
+        <a href="../ssa-gender-support/index.html">Support &amp; Services</a>
+      </nav>
+    </div>
 
-    <div class="panel">
-      <div class="resource">
-        <h2>Navigation</h2>
-        <p>Use the buttons below to move between the two GitHub Pages site pages.</p>
-        <div class="links">
-          <a class="button" href="../index.html">Home</a>
-          <a class="button secondary" href="../ssa-gender-education/index.html">SSA-Gender Education</a>
+    <section class="hero">
+      <h1>SSA-Gender Support and Resources</h1>
+    </section>
+
+    <section class="content-card">
+      <div class="grid">
+        <div class="media">
+          <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-Mission-Video-300x168.png" alt="Courage mission video thumbnail">
+          <h3>Video: The Mission of Courage International</h3>
+          <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-300x200.jpg" alt="Man">
+          <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-Woman-300x200.jpg" alt="Man and woman">
+          <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Woman-300x200.jpg" alt="Woman">
+          <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-International-Logo-300x170.png" alt="Courage International logo">
+        </div>
+
+        <div>
+          <div class="section notice">
+            For Educational Resources, please see our <a href="../ssa-gender-education/index.html">Education</a> page.
+          </div>
+
+          <div class="section">
+            <h2>Support and Services</h2>
+            <h3>Courage</h3>
+            <p>Courage is a support ministry for men and women 18 years and up who experience same-sex attraction and want pastoral guidance, fellowship, and help striving for chastity.</p>
+            <p class="muted"><strong>Support options:</strong> confidentiality is assured in all options.</p>
+            <p><strong>For Men:</strong> Long Island Courage Chapter</p>
+            <p><strong>For Women:</strong> Contact Yvonne at <strong>516-413-1212</strong> by call or text.</p>
+            <p><strong>For Young Adults (18-30):</strong> miguel_apatan23z@yahoo.com</p>
+            <p><strong>For Teens:</strong> see the Courage FAQs page for guidance and chapter information.</p>
+          </div>
+
+          <div class="section">
+            <h3>EnCourage</h3>
+            <p>EnCourage supports parents, spouses, siblings, and other loved ones seeking Catholic guidance, spiritual support, and practical help responding with compassion.</p>
+            <p><strong>Contact:</strong> Long Island EnCourage Chapter</p>
+          </div>
+
+          <div class="section">
+            <h3>Additional Resource and Support Options</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=jeIb0UC2WnY" target="_blank" rel="noopener">Excellent Gender Q&amp;A with Jason Evert</a></li>
+              <li><a href="https://chastity.com/qa/category/lgbtq/" target="_blank" rel="noopener">Jason Evert LGBTQ Q&amp;A</a></li>
+              <li><a href="https://chastity.com/gender/" target="_blank" rel="noopener">Jason Evert Gender Issues</a></li>
+              <li><a href="https://personandidentity.com/" target="_blank" rel="noopener">The Person and Identity Project</a></li>
+              <li><a href="https://www.usccb.org/news/2010/usccb-president-clarifies-status-new-ways-ministry" target="_blank" rel="noopener">USCCB President Clarifies Status of New Ways Ministry</a></li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <a class="pill" href="../ssa-gender-education/index.html">Go to Education</a>
+            <a class="pill" href="../index.html">Back Home</a>
+          </div>
         </div>
       </div>
-
-      <div class="resource">
-        <h2>Content</h2>
-        <p>The original page content from the WordPress site is preserved in this page build. It was simplified into a static HTML layout so it can be hosted on GitHub Pages.</p>
-      </div>
-    </div>
-  </main>
+    </section>
+  </div>
 </body>
 </html>
