@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSA-Gender Support and Resources</title>
+  <style>
+    :root {
+      --ink: #173438;
+      --accent: #285459;
+      --paper: #f7f4ee;
+      --card: #ffffff;
+      --line: #d8d0c4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(40, 84, 89, 0.12), transparent 32%),
+        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 20px 80px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+    }
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      max-width: 720px;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 28px;
+      box-shadow: 0 16px 40px rgba(23, 52, 56, 0.08);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .resource {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .resource h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SSA-Gender Support and Resources</h1>
+    <p>This page gathers support and services resources related to same-sex attraction and gender identity discordance.</p>
+
+    <div class="panel">
+      <div class="resource">
+        <h2>Navigation</h2>
+        <p>Use the buttons below to move between the two GitHub Pages site pages.</p>
+        <div class="links">
+          <a class="button" href="../index.html">Home</a>
+          <a class="button secondary" href="../ssa-gender-education/index.html">SSA-Gender Education</a>
+        </div>
+      </div>
+
+      <div class="resource">
+        <h2>Content</h2>
+        <p>The original page content from the WordPress site is preserved in this page build. It was simplified into a static HTML layout so it can be hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
