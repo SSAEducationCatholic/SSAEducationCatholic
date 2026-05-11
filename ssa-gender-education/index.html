@@ -5,127 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Same Sex Attraction &amp; Gender Identity Discordance Educational Resources</title>
   <style>
-:root {
-  --ink: #173438;
-  --accent: #285459;
-  --paper: #f7f4ee;
-  --card: #ffffff;
-  --line: #d9d1c5;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at top left, rgba(40,84,89,0.12), transparent 32%),
-    linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
-  font-family: Georgia, "Times New Roman", serif;
-}
-a { color: var(--accent); }
-img { max-width: 100%; height: auto; display: block; }
-.site-shell { max-width: 1180px; margin: 0 auto; padding: 24px 18px 80px; }
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 24px;
-  padding: 16px 20px;
-  background: rgba(255,255,255,0.8);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  backdrop-filter: blur(10px);
-}
-.brand {
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-}
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.nav a {
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-.hero {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 28px 24px;
-  box-shadow: 0 18px 42px rgba(23,52,56,0.08);
-  margin-bottom: 26px;
-}
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.06;
-}
-.content-card {
-  background: rgba(255,255,255,0.96);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 18px;
-  box-shadow: 0 18px 42px rgba(23,52,56,0.06);
-}
-.columns {
-  display: grid;
-  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
-  gap: 34px;
-  align-items: start;
-}
-@media (max-width: 900px) {
-  .columns { grid-template-columns: 1fr; }
-}
-.media-col .media-item {
-  margin: 0 0 18px;
-  text-align: center;
-}
-.media-col .media-item a,
-.media-col .media-item div {
-  display: inline-block;
-}
-.media-col .media-caption {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.media-col img {
-  border: 1px solid var(--line);
-}
-.content-col h2,
-.content-col h3,
-.content-col h4 {
-  margin: 0 0 12px;
-  line-height: 1.12;
-}
-.content-col p {
-  line-height: 1.7;
-  margin: 0 0 14px;
-}
-.content-col ul {
-  padding-left: 22px;
-  line-height: 1.65;
-  margin: 0 0 14px;
-}
-.section {
-  margin-bottom: 26px;
-}
-.section + .section {
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-}
-.small-note {
-  font-size: 0.95rem;
-}
-</style>
+    :root {
+      --ink: #173438;
+      --accent: #285459;
+      --paper: #f7f4ee;
+      --card: #ffffff;
+      --line: #d9d1c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(40,84,89,0.12), transparent 32%),
+        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: var(--accent); }
+    img { max-width: 100%; height: auto; display: block; }
+    .site-shell { max-width: 1180px; margin: 0 auto; padding: 24px 18px 80px; }
+    .topbar, .hero, .content-card {
+      background: rgba(255,255,255,0.96);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 42px rgba(23,52,56,0.06);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 16px 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+    }
+    .brand {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px; }
+    .nav a {
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .hero { padding: 28px 24px; margin-bottom: 26px; }
+    .hero h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.06; }
+    .content-card { padding: 18px; }
+    .columns {
+      display: grid;
+      grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+      gap: 34px;
+      align-items: start;
+    }
+    @media (max-width: 900px) { .columns { grid-template-columns: 1fr; } }
+    .media-col .media-item { margin: 0 0 18px; text-align: center; }
+    .media-col .media-item a, .media-col .media-item div { display: inline-block; }
+    .media-col .media-caption { margin: 10px 0 0; font-size: 1rem; font-weight: 700; }
+    .media-col img { border: 1px solid var(--line); }
+    .content-col h2, .content-col h3, .content-col h4 { margin: 0 0 12px; line-height: 1.12; }
+    .content-col p { line-height: 1.7; margin: 0 0 14px; }
+    .content-col ul { padding-left: 22px; line-height: 1.65; margin: 0 0 14px; }
+    .section { margin-bottom: 26px; }
+    .section + .section { padding-top: 18px; border-top: 1px solid var(--line); }
+    .small-note { font-size: 0.95rem; }
+    .pill {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 8px;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body>
   <div class="site-shell">
@@ -147,28 +109,28 @@ img { max-width: 100%; height: auto; display: block; }
         <div class="media-col">
           <div class="media-item">
             <a href="https://vimeo.com/204963997?embedded=true&amp;source=vimeo_logo&amp;owner=28629601" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-Mission-Video-300x168.png" alt="Video: The Mission of Courage International" width="300" height="168">
+              <img src="../assets/courage-mission-video.svg" alt="Video: The Mission of Courage International" width="300" height="168">
             </a>
             <div class="media-caption">Video: The Mission of Courage International</div>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/man/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-300x200.jpg" alt="Man" width="300" height="200">
+              <img src="../assets/man.svg" alt="Man" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/support-services/man-woman/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-Woman-300x200.jpg" alt="Man &amp; Woman" width="300" height="200">
+              <img src="../assets/man-woman.svg" alt="Man &amp; Woman" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/woman/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Woman-300x200.jpg" alt="Woman" width="300" height="200">
+              <img src="../assets/woman.svg" alt="Woman" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="https://couragerc.org/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-International-Logo-300x170.png" alt="Courage International Logo" width="300" height="170">
+              <img src="../assets/courage-logo.svg" alt="Courage International Logo" width="300" height="170">
             </a>
           </div>
         </div>
@@ -177,17 +139,15 @@ img { max-width: 100%; height: auto; display: block; }
           <div class="section">
             <p class="small-note">For Support Services Resources, please see our <a href="../ssa-gender-support/index.html">Support &amp; Services</a> page.</p>
             <h2>Educational Resources</h2>
-            <p><strong>The authentically and faithfully Catholic websites and educational resources</strong> listed below are rich in beauty to educate, form, and transform Catholics seeking clarity on these topics. They are especially helpful for those experiencing same-sex attraction, gender identity discordance, and for clergy, religious, educators, and lay leaders.</p>
-            <p><strong>Catholic Teaching loves and embraces all persons as beloved sons and daughters of God.</strong> Pastoral accompaniment is intended to be loving and profound, respecting the dignity of each person and helping each person flourish in freedom according to God&rsquo;s loving plan.</p>
-            <p><strong>Unfortunately, many persons embracing LGBTQ identities have not had the benefit of a complete Catholic understanding or pastoral guidance.</strong> These resources help bridge that gap with truth and charity.</p>
+            <p><strong>The authentically and faithfully Catholic websites and educational resources</strong> listed below are all rich in beauty to educate, form, and transform all Catholics earnestly seeking clarity on these topics, but in particular, those who experience same-sex attraction, gender identity discordance, and a range of other experiences. In addition, the websites and resources will be helpful to those with loved ones who have conveyed these experiences to them. Most especially, Clergy, Religious, Educators, Lay Leaders, Health Care workers, etc. will find these invaluable foundation for their ministries.</p>
+            <p><strong>Catholic Teaching loves and embraces all persons as beloved sons and daughters of God.</strong> Pastoral accompaniment is intended to be abundantly loving and profound, respecting the personal dignity of each person. As in all areas connected to human sexuality, Catholic Teaching centers on doing justice to the human person and enabling each person to flourish authentically in freedom according to God&rsquo;s loving plan.</p>
+            <p><strong>Unfortunately, most persons embracing LGBTQ identities have not had the benefit of a complete Catholic understanding or pastoral guidance.</strong> In addition, many have been hurt by members of the Church who have communicated inarticulately the beauty of Church Teaching in its fullness on these issues. At the same time, many do not realize that there are countless men and women who have very much benefitted from appropriate accompaniment, have come to fully embrace Catholic wisdom, and are indebted to the Church for Her clarity and guidance.</p>
           </div>
 
           <div class="section">
             <h3>Websites</h3>
             <p><a href="https://truthandlove.com/" target="_blank" rel="noopener"><strong>Truth &amp; Love</strong></a></p>
-            <p>Comprehensive formation for those seeking to deepen their understanding of these lived realities.</p>
             <p><a href="https://couragerc.org/" target="_blank" rel="noopener"><strong>Courage/EnCourage Apostolate</strong></a></p>
-            <p>Encounter Christ. Discover yourself. Grow in holiness.</p>
             <p>Support group options listed on the support page may also serve as educational resources.</p>
             <ul>
               <li><a href="https://couragerc.org/chapter/merrick-long-island-new-york/" target="_blank" rel="noopener">LI Courage Chapter</a></li>
@@ -227,7 +187,7 @@ img { max-width: 100%; height: auto; display: block; }
             </ul>
             <p><strong>Making Sense of Bioethics</strong> by Fr. Tad Pacholczyk</p>
             <ul>
-              <li><a href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F5e3ada1a6a2e8d6a131d1dcd%2Ft%2F5f295953f5b076067905e53d%2F1596545370994%2FMSOB%2523121%2BChanging%2BMy%2BBody%2BTo%2B%25E2%2580%259CMatch%25E2%2580%259D%2BMy%2B%25E2%2580%259CIdentity%253F%252522.pdf" target="_blank" rel="noopener">Changing My Body to “Match” My “Identity”</a></li>
+              <li><a href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F5e3ada1a6a2e8d6a131d1dcd%2Ft%2F5f295953f5b076067905e53d%2F1596545370994%2FMSOB%2523121%2BChanging%2BMy%2BBody%2BTo%2B%25E2%2580%259CMatch%25E2%2580%259D%2BMy%2B%25E2%2580%259CIdentity%253F%252522.pdf" target="_blank" rel="noopener">Changing My Body to &ldquo;Match&rdquo; My &ldquo;Identity&rdquo;</a></li>
               <li><a href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F5e3ada1a6a2e8d6a131d1dcd%2Ft%2F5f078640cc8639698130efaa%2F1594328647777%2FMSOB%2523166%2BNobody%2BGets%2BHurt%253F.pdf" target="_blank" rel="noopener">Nobody Gets Hurt</a></li>
             </ul>
           </div>
