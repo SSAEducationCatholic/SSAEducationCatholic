@@ -5,127 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Same Sex Attraction &amp; Gender Identity Discordance Support &amp; Services Resources</title>
   <style>
-:root {
-  --ink: #173438;
-  --accent: #285459;
-  --paper: #f7f4ee;
-  --card: #ffffff;
-  --line: #d9d1c5;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at top left, rgba(40,84,89,0.12), transparent 32%),
-    linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
-  font-family: Georgia, "Times New Roman", serif;
-}
-a { color: var(--accent); }
-img { max-width: 100%; height: auto; display: block; }
-.site-shell { max-width: 1180px; margin: 0 auto; padding: 24px 18px 80px; }
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 24px;
-  padding: 16px 20px;
-  background: rgba(255,255,255,0.8);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  backdrop-filter: blur(10px);
-}
-.brand {
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-}
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.nav a {
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-.hero {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 28px 24px;
-  box-shadow: 0 18px 42px rgba(23,52,56,0.08);
-  margin-bottom: 26px;
-}
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.06;
-}
-.content-card {
-  background: rgba(255,255,255,0.96);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 18px;
-  box-shadow: 0 18px 42px rgba(23,52,56,0.06);
-}
-.columns {
-  display: grid;
-  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
-  gap: 34px;
-  align-items: start;
-}
-@media (max-width: 900px) {
-  .columns { grid-template-columns: 1fr; }
-}
-.media-col .media-item {
-  margin: 0 0 18px;
-  text-align: center;
-}
-.media-col .media-item a,
-.media-col .media-item div {
-  display: inline-block;
-}
-.media-col .media-caption {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.media-col img {
-  border: 1px solid var(--line);
-}
-.content-col h2,
-.content-col h3,
-.content-col h4 {
-  margin: 0 0 12px;
-  line-height: 1.12;
-}
-.content-col p {
-  line-height: 1.7;
-  margin: 0 0 14px;
-}
-.content-col ul {
-  padding-left: 22px;
-  line-height: 1.65;
-  margin: 0 0 14px;
-}
-.section {
-  margin-bottom: 26px;
-}
-.section + .section {
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-}
-.small-note {
-  font-size: 0.95rem;
-}
-</style>
+    :root {
+      --ink: #173438;
+      --accent: #285459;
+      --paper: #f7f4ee;
+      --card: #ffffff;
+      --line: #d9d1c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(40,84,89,0.12), transparent 32%),
+        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: var(--accent); }
+    img { max-width: 100%; height: auto; display: block; }
+    .site-shell { max-width: 1180px; margin: 0 auto; padding: 24px 18px 80px; }
+    .topbar, .hero, .content-card {
+      background: rgba(255,255,255,0.96);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 42px rgba(23,52,56,0.06);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 16px 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+    }
+    .brand {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px; }
+    .nav a {
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .hero { padding: 28px 24px; margin-bottom: 26px; }
+    .hero h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.06; }
+    .content-card { padding: 18px; }
+    .columns {
+      display: grid;
+      grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+      gap: 34px;
+      align-items: start;
+    }
+    @media (max-width: 900px) { .columns { grid-template-columns: 1fr; } }
+    .media-col .media-item { margin: 0 0 18px; text-align: center; }
+    .media-col .media-item a, .media-col .media-item div { display: inline-block; }
+    .media-col .media-caption { margin: 10px 0 0; font-size: 1rem; font-weight: 700; }
+    .media-col img { border: 1px solid var(--line); }
+    .content-col h2, .content-col h3, .content-col h4 { margin: 0 0 12px; line-height: 1.12; }
+    .content-col p { line-height: 1.7; margin: 0 0 14px; }
+    .content-col ul { padding-left: 22px; line-height: 1.65; margin: 0 0 14px; }
+    .section { margin-bottom: 26px; }
+    .section + .section { padding-top: 18px; border-top: 1px solid var(--line); }
+    .small-note { font-size: 0.95rem; }
+  </style>
 </head>
 <body>
   <div class="site-shell">
@@ -147,28 +98,28 @@ img { max-width: 100%; height: auto; display: block; }
         <div class="media-col">
           <div class="media-item">
             <a href="https://vimeo.com/204963997?embedded=true&amp;source=vimeo_logo&amp;owner=28629601" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-Mission-Video-300x168.png" alt="Video: The Mission of Courage International" width="300" height="168">
+              <img src="../assets/courage-mission-video.svg" alt="Video: The Mission of Courage International" width="300" height="168">
             </a>
             <div class="media-caption">Video: The Mission of Courage International</div>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/man/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-300x200.jpg" alt="Man" width="300" height="200">
+              <img src="../assets/man.svg" alt="Man" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/support-services/man-woman/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Man-Woman-300x200.jpg" alt="Man &amp; Woman" width="300" height="200">
+              <img src="../assets/man-woman.svg" alt="Man &amp; Woman" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="http://anthonym457.sg-host.com/woman/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Woman-300x200.jpg" alt="Woman" width="300" height="200">
+              <img src="../assets/woman.svg" alt="Woman" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
             <a href="https://couragerc.org/" target="_blank" rel="noopener">
-              <img src="https://anthonym457.sg-host.com/wp-content/uploads/2022/06/Courage-International-Logo-300x170.png" alt="Courage International Logo" width="300" height="170">
+              <img src="../assets/courage-logo.svg" alt="Courage International Logo" width="300" height="170">
             </a>
           </div>
         </div>
@@ -187,7 +138,7 @@ img { max-width: 100%; height: auto; display: block; }
             <p><em>Contact</em>: <a href="https://couragerc.org/chapter/merrick-long-island-new-york/" target="_blank" rel="noopener"><strong>Long Island Courage Chapter</strong></a></p>
             <p><strong>For Women</strong><br>Adult women, 18 years and older, who experience same-sex attractions can reach out to this contact for guidance and Apostolate options:<br><em>Contact</em>: Yvonne <strong>516-413-1212</strong> (Inquirers can call or text)</p>
             <p><strong>Zoom Option for Young Adults (18-30 Years Old)</strong><br>There is an online Young Adult Chapter that provides monthly Zoom meetings during which members receive spiritual support and educational formation on the beauty of Catholic Teaching, and grow in fraternity with brothers and sisters striving to lead chaste lives. In-house Chaplain is Fr. Philip Bochanski.<br><em>Contact</em>: <strong>miguel_apatan23z@yahoo.com</strong></p>
-            <p><strong>For Teens</strong><br>Please click <a href="https://couragerc.org/faqs/" target="_blank" rel="noopener">here</a>.<br>Scroll down to find, “Are there Courage Chapters for teenagers?”<br>What do you recommend for Youth and Young Adults experiencing same-sex attraction?</p>
+            <p><strong>For Teens</strong><br>Please click <a href="https://couragerc.org/faqs/" target="_blank" rel="noopener">here</a>.<br>Scroll down to find, &ldquo;Are there Courage Chapters for teenagers?&rdquo;<br>What do you recommend for Youth and Young Adults experiencing same-sex attraction?</p>
           </div>
 
           <div class="section">
