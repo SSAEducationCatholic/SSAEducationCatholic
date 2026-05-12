@@ -115,7 +115,7 @@
           </div>
           <div class="media-item">
             <a href="../ssa-gender-support/index.html#courage" target="_blank" rel="noopener">
-              <img src="../assets/man.svg" alt="Man" width="300" height="200">
+              <img id="man-photo" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Man" width="300" height="200">
             </a>
           </div>
           <div class="media-item">
@@ -139,7 +139,7 @@
           <div class="section">
             <p class="small-note">For Support Services Resources, please see our <a href="../ssa-gender-support/index.html">Support &amp; Services</a> page.</p>
             <h2>Educational Resources</h2>
-            <p><strong>The authentically and faithfully Catholic websites and educational resources</strong> listed below are all rich in beauty to educate, form, and transform all Catholics earnestly seeking clarity on these topics, but in particular, those who experience same-sex attraction, gender identity discordance, and a range of other experiences. In addition, the websites and resources will be helpful to those with loved ones who have conveyed these experiences to them. Most especially, Clergy, Religious, Educators, Lay Leaders, Health Care workers, etc. will find these invaluable foundation for their ministries.</p>
+            <p><strong>The authentically and faithfully Catholic websites and educational resources</strong> listed below are all rich in beauty to educate, form, and transform all Catholics earnestly seeking clarity on these topics, but in particular, those who experience same-sex attraction, gender identity discordance, and a range of other experiences. In addition, the websites and resources will be helpful to those with loved ones who have conveyed these experiences to them. Most especially, Clergy, Religious, Educators, Lay Leaders, Health Care workers, etc. will find these an invaluable foundation for their ministries.</p>
             <p><strong>Catholic Teaching loves and embraces all persons as beloved sons and daughters of God.</strong> Pastoral accompaniment is intended to be abundantly loving and profound, respecting the personal dignity of each person. As in all areas connected to human sexuality, Catholic Teaching centers on doing justice to the human person and enabling each person to flourish authentically in freedom according to God&rsquo;s loving plan.</p>
             <p><strong>Unfortunately, most persons embracing LGBTQ identities have not had the benefit of a complete Catholic understanding or pastoral guidance.</strong> In addition, many have been hurt by members of the Church who have communicated inarticulately the beauty of Church Teaching in its fullness on these issues. At the same time, many do not realize that there are countless men and women who have very much benefitted from appropriate accompaniment, have come to fully embrace Catholic wisdom, and are indebted to the Church for Her clarity and guidance.</p>
           </div>
@@ -211,5 +211,20 @@
       </div>
     </section>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const img = document.getElementById('man-photo');
+      if (!img) return;
+      if (location.protocol === 'file:') {
+        img.src = '../../optimized-assets/Man-300x200.jpg';
+        return;
+      }
+      try {
+        const res = await fetch('../assets/man-300x200.b64.txt', { cache: 'no-store' });
+        const b64 = (await res.text()).trim();
+        if (b64) img.src = `data:image/jpeg;base64,${b64}`;
+      } catch (_) {}
+    });
+  </script>
 </body>
 </html>
