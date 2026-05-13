@@ -104,7 +104,30 @@
           </div>
           <div class="media-item">
             <a href="../ssa-gender-support/index.html#courage" target="_blank" rel="noopener">
-              <img id="man-photo" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Man" width="300" height="200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200" role="img" aria-label="Man portrait illustration">
+                <defs>
+                  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#efe2d1"/>
+                    <stop offset="100%" stop-color="#c4a27b"/>
+                  </linearGradient>
+                  <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#23384d"/>
+                    <stop offset="100%" stop-color="#132231"/>
+                  </linearGradient>
+                </defs>
+                <rect width="300" height="200" fill="url(#bg)"/>
+                <rect y="146" width="300" height="54" fill="#f5efe7"/>
+                <circle cx="150" cy="82" r="34" fill="#f0c9a7"/>
+                <path d="M114 158c10-24 31-36 36-36s26 12 36 36" fill="url(#shirt)"/>
+                <path d="M120 72c2-20 16-33 31-33s29 13 31 33c-8 4-16 5-31 5s-23-1-31-5z" fill="#5a3b28"/>
+                <circle cx="137" cy="81" r="3" fill="#2b1b15"/>
+                <circle cx="163" cy="81" r="3" fill="#2b1b15"/>
+                <path d="M139 95c6 5 17 5 22 0" fill="none" stroke="#9b5f4a" stroke-width="2" stroke-linecap="round"/>
+                <path d="M147 98l3 10 3-10" fill="none" stroke="#9b5f4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M138 102h24" stroke="#1c3147" stroke-width="4" stroke-linecap="round"/>
+                <path d="M129 104l21 45 21-45" fill="none" stroke="#e6d8cb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M129 104l21 45 21-45" fill="none" stroke="#f8f3ed" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
           </div>
           <div class="media-item">
@@ -170,20 +193,5 @@
       </div>
     </section>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      const img = document.getElementById('man-photo');
-      if (!img) return;
-      if (location.protocol === 'file:') {
-        img.src = '../../optimized-assets/Man-300x200.jpg';
-        return;
-      }
-      try {
-        const res = await fetch('../assets/man-300x200.b64.txt', { cache: 'no-store' });
-        const b64 = (await res.text()).trim();
-        if (b64) img.src = `data:image/jpeg;base64,${b64}`;
-      } catch (_) {}
-    });
-  </script>
 </body>
 </html>
