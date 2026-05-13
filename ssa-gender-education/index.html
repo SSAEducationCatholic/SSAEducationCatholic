@@ -219,7 +219,7 @@
         img.src = 'file:///C:/Users/nciar/Downloads/OIP.webp';
         return;
       }
-      fetch('../assets/oip.webp.b64.txt', { cache: 'no-store' })
+      fetch('../assets/oip-v2.webp.b64.txt', { cache: 'no-store' })
         .then((res) => res.text())
         .then((b64) => {
           const clean = b64.trim();
