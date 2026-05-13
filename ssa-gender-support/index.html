@@ -103,11 +103,6 @@
             <div class="media-caption">Video: The Mission of Courage International</div>
           </div>
           <div class="media-item">
-            <a href="../ssa-gender-support/index.html#courage" target="_blank" rel="noopener">
-              <img id="man-photo" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Man" width="300" height="200">
-            </a>
-          </div>
-          <div class="media-item">
             <a href="../ssa-gender-support/index.html#encourage" target="_blank" rel="noopener">
               <img src="../assets/man-woman.svg" alt="Man &amp; Woman" width="300" height="200">
             </a>
@@ -170,22 +165,5 @@
       </div>
     </section>
   </div>
-  <script>
-    (function () {
-      const img = document.getElementById('man-photo');
-      if (!img) return;
-      if (location.protocol === 'file:') {
-        img.src = 'file:///C:/Users/nciar/Downloads/OIP.webp';
-        return;
-      }
-      fetch('../assets/oip-v2.webp.b64.txt', { cache: 'no-store' })
-        .then((res) => res.text())
-        .then((b64) => {
-          const clean = b64.trim();
-          if (clean) img.src = `data:image/webp;base64,${clean}`;
-        })
-        .catch(() => {});
-    })();
-  </script>
 </body>
 </html>
